@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyT-m7-wab">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_index_s" translatesAutoresizingMaskIntoConstraints="NO" id="yns-A6-fBE">
+                            <rect key="frame" x="10" y="0.0" width="30" height="46"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxo-D2-VBb">
+                            <rect key="frame" x="50" y="14.5" width="28.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ7-86-fuM">
+                            <rect key="frame" x="299" y="0.0" width="76" height="46"/>
+                            <color key="backgroundColor" red="1" green="0.4549019608" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="qId-AY-R75"/>
+                            </constraints>
+                            <state key="normal" title="结算">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="finishAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="xnl-cX-ewB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nxo-D2-VBb" firstAttribute="leading" secondItem="yns-A6-fBE" secondAttribute="trailing" constant="10" id="1Yg-oq-tdo"/>
+                        <constraint firstItem="yns-A6-fBE" firstAttribute="top" secondItem="gyT-m7-wab" secondAttribute="top" id="866-yJ-T0n"/>
+                        <constraint firstAttribute="trailing" secondItem="KQ7-86-fuM" secondAttribute="trailing" id="9yl-FY-dcy"/>
+                        <constraint firstItem="nxo-D2-VBb" firstAttribute="centerY" secondItem="gyT-m7-wab" secondAttribute="centerY" id="hLb-nM-igR"/>
+                        <constraint firstItem="KQ7-86-fuM" firstAttribute="top" secondItem="gyT-m7-wab" secondAttribute="top" id="jlP-d0-GON"/>
+                        <constraint firstAttribute="bottom" secondItem="yns-A6-fBE" secondAttribute="bottom" id="ldG-PA-A4q"/>
+                        <constraint firstAttribute="height" constant="46" id="ny0-3g-h4e"/>
+                        <constraint firstAttribute="bottom" secondItem="KQ7-86-fuM" secondAttribute="bottom" id="ogI-kc-3da"/>
+                        <constraint firstItem="yns-A6-fBE" firstAttribute="leading" secondItem="gyT-m7-wab" secondAttribute="leading" constant="10" id="xab-9J-MKf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gyT-m7-wab" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0qg-jg-pPX"/>
+                <constraint firstAttribute="trailing" secondItem="gyT-m7-wab" secondAttribute="trailing" id="NSe-Cb-hSC"/>
+                <constraint firstItem="gyT-m7-wab" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lCU-7M-gLm"/>
+            </constraints>
+            <connections>
+                <outlet property="countLab" destination="nxo-D2-VBb" id="Cti-Hi-UiC"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="100.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_index_s" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SheetAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1az-Z1-J4t">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="aqk-nC-g6L" appends="YES" id="MoR-fc-V9M"/>
+                    </connections>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f7G-SW-eFD">
+                    <rect key="frame" x="0.0" y="427" width="375" height="240"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="pJT-jl-YZI"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="f7G-SW-eFD" secondAttribute="trailing" id="48s-X5-dM1"/>
+                <constraint firstItem="1az-Z1-J4t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="648-Tn-Ldt"/>
+                <constraint firstAttribute="bottom" secondItem="f7G-SW-eFD" secondAttribute="bottom" id="Bgs-l2-gap"/>
+                <constraint firstAttribute="trailing" secondItem="1az-Z1-J4t" secondAttribute="trailing" id="K8G-UI-Xcc"/>
+                <constraint firstAttribute="bottom" secondItem="1az-Z1-J4t" secondAttribute="bottom" id="TPj-Nf-X2N"/>
+                <constraint firstItem="f7G-SW-eFD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oQV-U1-G7D"/>
+                <constraint firstItem="1az-Z1-J4t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tWs-Kn-LX7"/>
+            </constraints>
+            <connections>
+                <outlet property="height" destination="pJT-jl-YZI" id="en8-Dr-52U"/>
+                <outlet property="myTableView" destination="f7G-SW-eFD" id="GZG-oy-Lg8"/>
+            </connections>
+            <point key="canvasLocation" x="644.5" y="388.5"/>
+        </view>
+        <tapGestureRecognizer id="aqk-nC-g6L">
+            <connections>
+                <action selector="tapAction:" destination="iN0-l3-epB" id="7KG-UZ-Khw"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StoreHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7e6-UF-f7v">
+                    <rect key="frame" x="0.0" y="518" width="375" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_indexshop" translatesAutoresizingMaskIntoConstraints="NO" id="FcM-pg-Aax">
+                            <rect key="frame" x="10" y="12.5" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="1L5-p3-nFv"/>
+                                <constraint firstAttribute="width" secondItem="FcM-pg-Aax" secondAttribute="height" multiplier="1:1" id="6Bp-fY-I08"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周一~周日 10：00-24：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDV-b1-sdV">
+                            <rect key="frame" x="100" y="73" width="149" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="威洁士高端汽车洁护会所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-1g-ohL">
+                            <rect key="frame" x="100" y="40" width="205" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.1529411765" green="0.70588235290000001" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fz-sF-4Ch">
+                            <rect key="frame" x="315" y="30" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="B03-y0-rey"/>
+                                <constraint firstAttribute="width" constant="40" id="XYZ-s1-L1k"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="icon_norder"/>
+                            <connections>
+                                <action selector="yuyueAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="9FY-Nu-dkp"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即预约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YU-hc-CZ6">
+                            <rect key="frame" x="308.5" y="79" width="53.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FcM-pg-Aax" firstAttribute="centerY" secondItem="7e6-UF-f7v" secondAttribute="centerY" id="3cp-XF-0wP"/>
+                        <constraint firstAttribute="trailing" secondItem="5fz-sF-4Ch" secondAttribute="trailing" constant="20" id="5A8-M6-zRR"/>
+                        <constraint firstItem="FcM-pg-Aax" firstAttribute="leading" secondItem="7e6-UF-f7v" secondAttribute="leading" constant="10" id="Et1-z4-vKt"/>
+                        <constraint firstAttribute="bottom" secondItem="6YU-hc-CZ6" secondAttribute="bottom" constant="5" id="FbJ-dz-t2u"/>
+                        <constraint firstItem="MDV-b1-sdV" firstAttribute="leading" secondItem="FcM-pg-Aax" secondAttribute="trailing" constant="15" id="OqP-Yk-hjW"/>
+                        <constraint firstItem="6YU-hc-CZ6" firstAttribute="centerX" secondItem="5fz-sF-4Ch" secondAttribute="centerX" id="Qtx-uy-D5M"/>
+                        <constraint firstItem="MDV-b1-sdV" firstAttribute="bottom" secondItem="FcM-pg-Aax" secondAttribute="bottom" id="TSj-CV-r7O"/>
+                        <constraint firstItem="5fz-sF-4Ch" firstAttribute="leading" secondItem="s9g-1g-ohL" secondAttribute="trailing" constant="10" id="bRG-wU-Gv2"/>
+                        <constraint firstItem="MDV-b1-sdV" firstAttribute="top" secondItem="s9g-1g-ohL" secondAttribute="bottom" constant="15" id="coS-qs-e4b"/>
+                        <constraint firstItem="5fz-sF-4Ch" firstAttribute="centerY" secondItem="7e6-UF-f7v" secondAttribute="centerY" id="v1v-XK-Asy"/>
+                        <constraint firstItem="s9g-1g-ohL" firstAttribute="leading" secondItem="MDV-b1-sdV" secondAttribute="leading" id="wx9-Si-dkZ"/>
+                        <constraint firstAttribute="height" constant="100" id="zPV-qZ-cxl"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUq-Q6-EXe">
+                    <rect key="frame" x="0.0" y="618" width="375" height="5"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="4em-p7-5ho"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kUq-Q6-EXe" secondAttribute="bottom" constant="44" id="K5K-9y-Qdt"/>
+                <constraint firstItem="kUq-Q6-EXe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VbB-iE-k2E"/>
+                <constraint firstAttribute="trailing" secondItem="kUq-Q6-EXe" secondAttribute="trailing" id="gEu-gD-ZcF"/>
+                <constraint firstAttribute="trailing" secondItem="7e6-UF-f7v" secondAttribute="trailing" id="kvD-Mi-r9W"/>
+                <constraint firstItem="kUq-Q6-EXe" firstAttribute="top" secondItem="7e6-UF-f7v" secondAttribute="bottom" id="rk5-fw-jbF"/>
+                <constraint firstItem="7e6-UF-f7v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sz8-wN-qls"/>
+            </constraints>
+            <connections>
+                <outlet property="nameLab" destination="s9g-1g-ohL" id="pAG-Ng-Hni"/>
+                <outlet property="shopImage" destination="FcM-pg-Aax" id="gh4-c6-lpV"/>
+                <outlet property="timeLab" destination="MDV-b1-sdV" id="Mdc-2Z-9ZX"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="149.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_norder" width="35" height="35"/>
+        <image name="pic_indexshop" width="75" height="75"/>
+    </resources>
+</document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="461" id="KGk-i7-Jjw" customClass="NewsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="461"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="460.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="485" placeholderIntrinsicHeight="333.5" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-kp-leq">
+                        <rect key="frame" x="0.0" y="0.0" width="485" height="333.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C16-3N-gvD">
+                        <rect key="frame" x="0.0" y="333.5" width="485" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝马年度更新报表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3Q-lO-8Hn">
+                                <rect key="frame" x="181.5" y="13.5" width="122.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="t3Q-lO-8Hn" firstAttribute="centerX" secondItem="C16-3N-gvD" secondAttribute="centerX" id="Dw1-nu-cUu"/>
+                            <constraint firstItem="t3Q-lO-8Hn" firstAttribute="centerY" secondItem="C16-3N-gvD" secondAttribute="centerY" id="HZI-Kh-8ql"/>
+                            <constraint firstAttribute="height" constant="45" id="RBT-3j-3MU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDX-Oc-ECx">
+                        <rect key="frame" x="0.0" y="455.5" width="485" height="5"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="o7K-G0-20P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EW-hi-N4F">
+                        <rect key="frame" x="0.0" y="378.5" width="485" height="2"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="psN-Fh-gNg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9P-EZ-OxH">
+                        <rect key="frame" x="0.0" y="380.5" width="485" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先入手Varis全碳尾翼然后再订套 Armytrix 钛合金带遥控阀门排气 购置 Fi Exhaust Ultimate Power Edition 101mm 口径竞技版带阀门中尾段..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNW-fS-s4Y">
+                                <rect key="frame" x="10" y="22" width="465" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="7fg-r6-Kcq"/>
+                            <constraint firstItem="MNW-fS-s4Y" firstAttribute="leading" secondItem="h9P-EZ-OxH" secondAttribute="leading" constant="10" id="SQS-u6-cEQ"/>
+                            <constraint firstItem="MNW-fS-s4Y" firstAttribute="centerY" secondItem="h9P-EZ-OxH" secondAttribute="centerY" id="egX-xU-w7x"/>
+                            <constraint firstItem="MNW-fS-s4Y" firstAttribute="centerX" secondItem="h9P-EZ-OxH" secondAttribute="centerX" id="grq-jz-WH6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h9P-EZ-OxH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7vs-Df-y5x"/>
+                    <constraint firstAttribute="trailing" secondItem="8EW-hi-N4F" secondAttribute="trailing" id="95y-JY-K8G"/>
+                    <constraint firstItem="oDX-Oc-ECx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BU4-3X-MGu"/>
+                    <constraint firstAttribute="bottom" secondItem="oDX-Oc-ECx" secondAttribute="bottom" id="CPc-Vg-JXe"/>
+                    <constraint firstItem="C16-3N-gvD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CbW-mu-4WG"/>
+                    <constraint firstAttribute="trailing" secondItem="aCx-kp-leq" secondAttribute="trailing" id="DB3-ZM-dse"/>
+                    <constraint firstItem="8EW-hi-N4F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ejb-85-bTz"/>
+                    <constraint firstItem="h9P-EZ-OxH" firstAttribute="top" secondItem="8EW-hi-N4F" secondAttribute="bottom" id="K6Q-eE-3NF"/>
+                    <constraint firstItem="8EW-hi-N4F" firstAttribute="top" secondItem="C16-3N-gvD" secondAttribute="bottom" id="OHu-Hc-NiD"/>
+                    <constraint firstAttribute="trailing" secondItem="C16-3N-gvD" secondAttribute="trailing" id="Qav-ws-ik6"/>
+                    <constraint firstItem="aCx-kp-leq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ylo-Nw-2rt"/>
+                    <constraint firstAttribute="trailing" secondItem="h9P-EZ-OxH" secondAttribute="trailing" id="dqO-qa-xTf"/>
+                    <constraint firstItem="C16-3N-gvD" firstAttribute="top" secondItem="aCx-kp-leq" secondAttribute="bottom" id="ndp-VI-0Bj"/>
+                    <constraint firstItem="aCx-kp-leq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pKU-a4-tAG"/>
+                    <constraint firstAttribute="trailing" secondItem="oDX-Oc-ECx" secondAttribute="trailing" id="ugj-4Q-E5w"/>
+                    <constraint firstItem="oDX-Oc-ECx" firstAttribute="top" secondItem="h9P-EZ-OxH" secondAttribute="bottom" id="wQV-aZ-Clf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="aCx-kp-leq" id="TfZ-59-veP"/>
+                <outlet property="contentLab" destination="MNW-fS-s4Y" id="kIl-eG-dRz"/>
+                <outlet property="titleLab" destination="t3Q-lO-8Hn" id="GE5-e5-fI1"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="175.5"/>
+        </tableViewCell>
+    </objects>
+</document>

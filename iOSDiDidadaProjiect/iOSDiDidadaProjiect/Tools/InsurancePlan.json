@@ -1,0 +1,76 @@
+ [
+  {
+  "select" : "0",
+  "flag":"1",
+  "coverageCode": "A",
+  "coverageName": "第三者责任险",
+  "insuredAmount": "50000,100000,150000,200000,300000,500000,1000000,1500000"
+  },
+  {
+  "select" : "0",
+  "flag":"1",
+  "coverageCode": "B",
+  "coverageName": "司机座位险",
+  "insuredAmount": "10000,20000,30000,40000,50000,100000,200000,500000,1000000"
+  },
+  {
+  "select" : "0",
+  "flag":"1",
+  "coverageCode": "C",
+  "coverageName": "乘客座位险",
+  "insuredAmount": "10000,20000,30000,40000,50000,100000,200000,500000,1000000"
+  },
+  {
+  "select" : "0",
+  "flag":"1",
+  "coverageCode": "D",
+  "coverageName": "全车盗抢险",
+  "insuredAmount": ""
+  },
+  {
+  "select" : "1",
+  "flag":"1",
+  "coverageCode": "E",
+  "coverageName": "车辆损失险",
+  "insuredAmount": ""
+  },
+  {
+  "select" : "0",
+  "flag":"1",
+  "coverageCode": "F",
+  "coverageName": "划痕险",
+  "insuredAmount": "2000,5000,10000,20000"
+  },
+  {
+  "select" : "0",
+  "coverageCode": "G",
+  "coverageName": "玻璃单独破损险",
+  "insuredAmount": "国产玻璃,进口玻璃"
+  },
+  {
+  "select" : "0",
+  "flag":"1",
+  "coverageCode": "H",
+  "coverageName": "自然损失险",
+  "insuredAmount": ""
+  },
+  {
+  "select" : "0",
+  "flag":"1",
+  "coverageCode": "I",
+  "coverageName": "涉水行驶损失险",
+  "insuredAmount": ""
+  },
+  {
+  "select" : "0",
+  "coverageCode": "J",
+  "coverageName": "车损无法找到第三方险",
+  "insuredAmount": ""
+  },
+  {
+  "select" : "0",
+  "coverageCode": "K",
+  "coverageName": "指定修理厂险",
+  "insuredAmount": "国产,进口"
+  }
+  ]

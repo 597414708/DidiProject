@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="CardataEditTwoCell">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXt-fK-3ds">
+                        <rect key="frame" x="0.0" y="61.5" width="490" height="1"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="MFw-qO-4Cv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0c-ox-Y04">
+                        <rect key="frame" x="0.0" y="0.0" width="490" height="61.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车牌号码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-xZ-IDz">
+                                <rect key="frame" x="10" y="23" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入车牌号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bve-bR-ZjO">
+                                <rect key="frame" x="100" y="11" width="370" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8eQ-ac-mBr"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bve-bR-ZjO" firstAttribute="leading" secondItem="C0c-ox-Y04" secondAttribute="leading" constant="100" id="7c6-4O-DhL"/>
+                            <constraint firstAttribute="trailing" secondItem="bve-bR-ZjO" secondAttribute="trailing" constant="20" id="85J-Oq-6ir"/>
+                            <constraint firstItem="bve-bR-ZjO" firstAttribute="centerY" secondItem="C0c-ox-Y04" secondAttribute="centerY" id="GSn-5X-ZMZ"/>
+                            <constraint firstItem="zNo-xZ-IDz" firstAttribute="centerY" secondItem="C0c-ox-Y04" secondAttribute="centerY" id="aUi-hK-3NW"/>
+                            <constraint firstItem="zNo-xZ-IDz" firstAttribute="leading" secondItem="C0c-ox-Y04" secondAttribute="leading" constant="10" id="dDO-A7-vJS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="VXt-fK-3ds" secondAttribute="bottom" id="Atx-Tz-fzG"/>
+                    <constraint firstItem="VXt-fK-3ds" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CUK-Xn-bPv"/>
+                    <constraint firstItem="VXt-fK-3ds" firstAttribute="top" secondItem="C0c-ox-Y04" secondAttribute="bottom" id="PS8-ni-FV1"/>
+                    <constraint firstAttribute="trailing" secondItem="C0c-ox-Y04" secondAttribute="trailing" id="Z4Q-Uh-rWb"/>
+                    <constraint firstItem="C0c-ox-Y04" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ddd-Gd-DA6"/>
+                    <constraint firstAttribute="trailing" secondItem="VXt-fK-3ds" secondAttribute="trailing" id="jBh-Zl-Klc"/>
+                    <constraint firstItem="VXt-fK-3ds" firstAttribute="top" secondItem="C0c-ox-Y04" secondAttribute="bottom" id="uEg-aa-sxG"/>
+                    <constraint firstItem="C0c-ox-Y04" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ug8-Fl-zD4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="className" destination="zNo-xZ-IDz" id="KQX-Cj-Nxv"/>
+                <outlet property="contentTf" destination="bve-bR-ZjO" id="1ey-Gt-lyH"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="222.5"/>
+        </tableViewCell>
+    </objects>
+</document>
